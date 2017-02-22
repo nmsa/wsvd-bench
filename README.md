@@ -25,17 +25,19 @@ In practice, it presents what is considered as the True Vulnerabilities (TV).
 ###  Details of the sources
 
 
-|    BM   |     Service Name    | #Op.  | #Vuln.  | LoC/Op | Avg.C. |
+|    BM   |     Service Name    | # of Operations  | # of Vulnerabilities  | LoC/Op | Avg.C. Complexity |
 |:-------:|:-------------------:|------:|--------:|-------:|-------:|
 | TPC-App |    ProductDetail    |     2 |       0 |    242 |      5 |
 |         |     NewProducts     |     2 |       1 |    206 |    4.5 |
 |         |     NewCustomer     |     6 |      35 |   1230 |    5.6 |
 |         | ChangePaymentMethod |     2 |       2 |    198 |      5 |
+|:-------:|:-------------------:|------:|--------:|-------:|-------:|
 |  TPC-C  |       Delivery      |     9 |      10 |   2043 |     21 |
 |         |       NewOrder      |     7 |      15 |   2317 |     33 |
 |         |     OrderStatus     |     7 |      18 |   1463 |     13 |
 |         |       Payment       |    13 |      34 |   4251 |     25 |
 |         |      StockLevel     |     4 |       6 |    320 |      4 |
+|:-------:|:-------------------:|------:|--------:|-------:|-------:|
 |  TPC-W  |     AdminUpdate     |     2 |       2 |    162 |      5 |
 |         |  CreateNewCustomer  |     6 |      27 |    978 |      3 |
 |         |  CreateShoppingCart |     2 |       0 |    414 |   2.67 |
