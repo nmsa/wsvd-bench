@@ -1,14 +1,19 @@
-/** ****************************************************************************
+/** **************************************************************************
  *
- * Departamento de Engenharia Informatica
- * Faculdade de Ciencias e Tecnologia
- * Universidade de Coimbra
+ * Centre for Informatics and Systems of the University of Coimbra
+ * Department of Informatics Engineering
+ * University of Coimbra
  *
+ *******************************************************************************
  *
- * Nuno Antunes
- * Marco Vieira
+ * WSVD - Tools and Methodologies for Development of Non Vulnerable Web Services
  *
- **************************************************************************** */
+ * Benchmarking Vulnerability Detection Tools for Web Services
+ *
+ * Nuno Antunes <nmsa@dei.uc.pt>, Marco Vieira <mvieira@dei.uc.pt>
+ * <p>
+ **************************************************************************
+ */
 package pt.uc.dei.wsvdbench.util;
 
 /**

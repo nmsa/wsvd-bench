@@ -1,4 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+/*******************************************************************************
+ *
+ * Centre for Informatics and Systems of the University of Coimbra
+ * Department of Informatics Engineering
+ * University of Coimbra
+ *
+ *******************************************************************************
+ *
+ * WSVD - Tools and Methodologies for Development of Non Vulnerable Web Services
+ * 
+ * Benchmarking Vulnerability Detection Tools for Web Services
+ *
+ * Nuno Antunes <nmsa@dei.uc.pt>, Marco Vieira <mvieira@dei.uc.pt>
+ *
+ ******************************************************************************/
+-->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <name>wsvd-bench</name>
@@ -6,14 +23,15 @@
     <groupId>pt.uc.dei.wsvd</groupId>
     <version>0.2</version>
     <packaging>war</packaging>
-    <url>http://eden.dei.uc.pt/~nmsa</url>
-    <description>Java 6 JDBC Interface</description>
-    <inceptionYear>2007</inceptionYear>
+    <url>https://github.com/nmsa/wsvd-bench</url>
+    <description>Benchmarking Vulnerability Detection Tools for Web Services</description>
+    <inceptionYear>2010</inceptionYear>
     <developers>
         <developer>
             <name>Nuno Antunes</name>
             <id>nmsa</id>
             <email>nmsa@dei.uc.pt</email>
+            <url>http://eden.dei.uc.pt/~nmsa</url>
         </developer>
     </developers>
     <licenses>
@@ -29,9 +47,6 @@
         <url>http://cisuc.dei.uc.pt</url>
     </organization>
 
-    <!--
-            **************************** BUILD *******************************
-    -->
     <reporting>
         <plugins>
             <plugin>
@@ -180,12 +195,6 @@
             <groupId>com.thoughtworks.xstream</groupId>
             <artifactId>xstream</artifactId>
             <version>1.3</version>
-        </dependency>
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.5</version>
-            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.jdom</groupId>

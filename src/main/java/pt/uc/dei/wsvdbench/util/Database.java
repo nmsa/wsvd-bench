@@ -1,17 +1,19 @@
-/*******************************************************************************
+/** **************************************************************************
  *
- * Departamento de Engenharia Informatica
- * Faculdade de Ciencias e Tecnologia
- * Universidade de Coimbra
- *
- *
- * Nuno Antunes <nmsa@dei.uc.pt>
- *
+ * Centre for Informatics and Systems of the University of Coimbra
+ * Department of Informatics Engineering
+ * University of Coimbra
  *
  *******************************************************************************
- * Last changed on : $Date: 2009-11-28 14:42:06 +0000 (Sat, 28 Nov 2009) $
- * Last changed by : $Author: nmsa $
- ******************************************************************************/
+ *
+ * WSVD - Tools and Methodologies for Development of Non Vulnerable Web Services
+ *
+ * Benchmarking Vulnerability Detection Tools for Web Services
+ *
+ * Nuno Antunes <nmsa@dei.uc.pt>, Marco Vieira <mvieira@dei.uc.pt>
+ * <p>
+ **************************************************************************
+ */
 package pt.uc.dei.wsvdbench.util;
 
 import java.sql.Connection;
@@ -26,10 +28,10 @@ import java.util.concurrent.atomic.AtomicInteger;
 /**
  * Implements a simple
  *
- * @since   r334
+ * @since r334
  * @version $Revision: 541 $
  *
- * @author  $Author: nmsa $
+ * @author $Author: nmsa $
  */
 public class Database {
 
