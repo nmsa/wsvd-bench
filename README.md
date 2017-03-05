@@ -1,18 +1,15 @@
-# wsvd-bench
+# WSVBBench
 
-Benchmarking Vulnerability Detection Tools for Web Services
+**Benchmarking Vulnerability Detection Tools for Web Services**
 
-This project contains the source code of the services that serve as `workload` of 
-a benchmark for tools able to detect SQL injection vulnerabilities in web services.
-The benchmark was introduced in [1], the papers explains the results and how they 
-were obtained. The benchmark was later reused and extended in [2].
+This project contains the source code of the services that serve as `workload` of a benchmark for tools able to detect SQL injection vulnerabilities in web services. The benchmark was introduced in [1], the papers explains the results and how they were obtained. The benchmark was later reused and extended in [2].
 
-The ground truth of this workload is presented in the 
+The ground truth of this workload is presented in the
 [detailed results](data/wsvd-bench-results-webservices-sqlinjection.xlsx) file.
 In practice, the column `Review` represents what is considered as the `true vulnerabilities (TV)`.
 
 1. Nuno Antunes and Marco Vieira, *["Benchmarking Vulnerability Detection Tools for Web Services"](http://ieeexplore.ieee.org/document/5552783/)*, IEEE 8th International Conference on Web Services (ICWS 2010), Miami, Florida, USA: IEEE Computer Society, ISBN: 978-1-4244-8146-0, July 5-10, 2010, [DOI:10.1109/ICWS.2010.76](https://doi.org/10.1109/ICWS.2010.76).  
-2. Nuno Antunes and Marco Vieira, *["Assessing and Comparing Vulnerability Detection Tools for Web Services: Benchmarking Approach and Examples"](http://ieeexplore.ieee.org/document/6763052/)*, IEEE Transactions on Services Computing, vol. 8, no. 2, pp. 269–283, 2015, [DOI:10.1109/TSC.2014.2310221](https://doi.org/10.1109/TSC.2014.2310221). 
+2. Nuno Antunes and Marco Vieira, *["Assessing and Comparing Vulnerability Detection Tools for Web Services: Benchmarking Approach and Examples"](http://ieeexplore.ieee.org/document/6763052/)*, IEEE Transactions on Services Computing, vol. 8, no. 2, pp. 269–283, 2015, [DOI:10.1109/TSC.2014.2310221](https://doi.org/10.1109/TSC.2014.2310221).
 
 
 
@@ -30,16 +27,16 @@ In practice, the column `Review` represents what is considered as the `true vuln
 ##  Sources Characterization
 
 
-The benchmark consists of 21 services, adapted from three standard benchmarks 
+The benchmark consists of 21 services, adapted from three standard benchmarks
 developed by the [Transactions processing Performance Council](http://www.tpc.org), namely: TPC-App, TPC-C, and TPC-W.
-Both `vulnerable`   and `non-vulnerable` versions of the services are included. 
-These services include a total of 80 operations (# operations) with 158 known 
-SQL Injection vulnerabilities (# vulnerabilities). 
-The table below presents, for each service, the number of known vulnerabilities, 
-the number of lines of code per operation (LoC/Op), and the Average Cyclomatic Complexity of the code 
-(calculated using [SourceMonitor](http://www.campwoodsw.com/sourcemonitor.html)). 
-As we can see, the services are quite diverse in terms of complexity, size and 
-even in number of vulnerabilities. This diversity is important to evaluate tools 
+Both `vulnerable`   and `non-vulnerable` versions of the services are included.
+These services include a total of 80 operations (# operations) with 158 known
+SQL Injection vulnerabilities (# vulnerabilities).
+The table below presents, for each service, the number of known vulnerabilities,
+the number of lines of code per operation (LoC/Op), and the Average Cyclomatic Complexity of the code
+(calculated using [SourceMonitor](http://www.campwoodsw.com/sourcemonitor.html)).
+As we can see, the services are quite diverse in terms of complexity, size and
+even in number of vulnerabilities. This diversity is important to evaluate tools
 that have different effectiveness in different scenarios..
 
 
@@ -69,15 +66,16 @@ that have different effectiveness in different scenarios..
 |         |     GetPassword     |     2 |       1 |     80 |      2 |
 |         |     GetUsername     |     2 |       0 |     80 |      2 |
 |                                                                   |
-|         |      __Total__    |    80 |     158 |  14826 |      __-__ |
+|======
+|         |      __Total__      |    80 |     158 |  14826 |  __-__ |
+{: rules="groups"}
 
 
+##  Works using the benchmark
 
-
-
-##  Some works using the benchmark
-
-1. A. Neto, *["Security Benchmarking of Transactional Systems"](http://hdl.handle.net/10183/143292)*, PhD thesis, University of Coimbra, 2012, Coimbra, Portugal.
+5. J. Thomé, L. K. Shar, D. Bianculli, L. Briand, *[“Security Slicing for Auditing Common Injection Vulnerabilities”](http://hdl.handle.net/10993/29924)*, Journal of Systems and Software, 2017.
+4. J. Thomé, L. K. Shar, D. Bianculli, L. Briand, *["Search-driven String Constraint Solving for Vulnerability Detection"](http://hdl.handle.net/10993/29045)*, In Proceedings of the 39th International Conference on Software Engineering (ICSE 2017). ACM.
+3. A. P. Matsunaga, R. Moraes, N. Antunes, *["Coverage Metrics and Detection of Injection Vulnerabilities: An Experimental Study"](https://doi.org/10.1109/EDCC.2016.32)*, 12th European Dependable Computing Conference (EDCC 2016), Gothenburg, Sweden, September 5-9, 2016.
 2. M. A. Laverdière, B. J. Berger, E. Merloz, *["Taint analysis of manual service compositions using Cross-Application Call Graphs"](https://doi.org/10.1109/SANER.2015.7081882)*, 2015 IEEE 22nd International Conference on Software Analysis, Evolution, and Reengineering (SANER), Montreal, QC, 2015, pp. 585-589.
-3. A. P. Matsunaga, R. Moraes, N. Antunes, *["Coverage Metrics and Detection of Injection Vulnerabilities: An Experimental Study"](https://doi.org/10.1109/EDCC.2016.32)*, 12th European Dependable Computing Conference (EDCC 2016), Gothenburg, Sweden, September 5-9, 2016. 
-4. J. Thome, L. K. Shar, D. Bianculli, L. Briand. *["Search-driven String Constraint Solving for Vulnerability Detection"](http://hdl.handle.net/10993/29045)*, In Proceedings of the 39th International Conference on Software Engineering (ICSE 2017). ACM.
+1. A. Neto, *["Security Benchmarking of Transactional Systems"](http://hdl.handle.net/10183/143292)*, PhD thesis, University of Coimbra, 2012, Coimbra, Portugal.
+{: reversed="reversed"}
