@@ -26,12 +26,9 @@ In practice, the column `Review` represents what is considered as the `true vuln
 
 ##  Sources Characterization
 
-
-The benchmark consists of 21 services, adapted from three standard benchmarks
-developed by the [Transactions processing Performance Council](http://www.tpc.org), namely: TPC-App, TPC-C, and TPC-W.
-Both `vulnerable`   and `non-vulnerable` versions of the services are included.
-These services include a total of 80 operations (# operations) with 158 known
-SQL Injection vulnerabilities (# vulnerabilities).
+The benchmark consists of `21` web services, adapted from three standard benchmarks developed by the [Transactions processing Performance Council](http://www.tpc.org), namely: **TPC-App**, **TPC-C**, and **TPC-W**.
+Both `vulnerable` and `non-vulnerable` versions of the services are included.
+These services include a total of 80 operations (# operations) with 158 known SQL Injection vulnerabilities (# vulnerabilities).
 The table below presents, for each service, the number of known vulnerabilities,
 the number of lines of code per operation (LoC/Op), and the Average Cyclomatic Complexity of the code
 (calculated using [SourceMonitor](http://www.campwoodsw.com/sourcemonitor.html)).
@@ -66,16 +63,13 @@ that have different effectiveness in different scenarios..
 |         |     GetPassword     |     2 |       1 |     80 |      2 |
 |         |     GetUsername     |     2 |       0 |     80 |      2 |
 |                                                                   |
-|======
 |         |      __Total__      |    80 |     158 |  14826 |  __-__ |
-{: rules="groups"}
 
 
-##  Works using the benchmark
 
-5. J. Thomé, L. K. Shar, D. Bianculli, L. Briand, *[“Security Slicing for Auditing Common Injection Vulnerabilities”](http://hdl.handle.net/10993/29924)*, Journal of Systems and Software, 2017.
-4. J. Thomé, L. K. Shar, D. Bianculli, L. Briand, *["Search-driven String Constraint Solving for Vulnerability Detection"](http://hdl.handle.net/10993/29045)*, In Proceedings of the 39th International Conference on Software Engineering (ICSE 2017). ACM.
-3. A. P. Matsunaga, R. Moraes, N. Antunes, *["Coverage Metrics and Detection of Injection Vulnerabilities: An Experimental Study"](https://doi.org/10.1109/EDCC.2016.32)*, 12th European Dependable Computing Conference (EDCC 2016), Gothenburg, Sweden, September 5-9, 2016.
-2. M. A. Laverdière, B. J. Berger, E. Merloz, *["Taint analysis of manual service compositions using Cross-Application Call Graphs"](https://doi.org/10.1109/SANER.2015.7081882)*, 2015 IEEE 22nd International Conference on Software Analysis, Evolution, and Reengineering (SANER), Montreal, QC, 2015, pp. 585-589.
-1. A. Neto, *["Security Benchmarking of Transactional Systems"](http://hdl.handle.net/10183/143292)*, PhD thesis, University of Coimbra, 2012, Coimbra, Portugal.
-{: reversed="reversed"}
+##  Examples of works using the benchmark
+* J. Thomé, L. K. Shar, D. Bianculli, L. Briand, *[“Security Slicing for Auditing Common Injection Vulnerabilities”](http://hdl.handle.net/10993/29924)*, Journal of Systems and Software, 2017.
+* J. Thomé, L. K. Shar, D. Bianculli, L. Briand, *["Search-driven String Constraint Solving for Vulnerability Detection"](http://hdl.handle.net/10993/29045)*, In Proceedings of the 39th International Conference on Software Engineering (ICSE 2017). ACM.
+* A. P. Matsunaga, R. Moraes, N. Antunes, *["Coverage Metrics and Detection of Injection Vulnerabilities: An Experimental Study"](https://doi.org/10.1109/EDCC.2016.32)*, 12th European Dependable Computing Conference (EDCC 2016), Gothenburg, Sweden, September 5-9, 2016.
+* M. A. Laverdière, B. J. Berger, E. Merloz, *["Taint analysis of manual service compositions using Cross-Application Call Graphs"](https://doi.org/10.1109/SANER.2015.7081882)*, 2015 IEEE 22nd International Conference on Software Analysis, Evolution, and Reengineering (SANER), Montreal, QC, 2015, pp. 585-589.
+* A. Neto, *["Security Benchmarking of Transactional Systems"](http://hdl.handle.net/10183/143292)*, PhD thesis, University of Coimbra, 2012, Coimbra, Portugal.
