@@ -1,4 +1,4 @@
-# WSVBBench
+# WSVDBench
 
 **Benchmarking Vulnerability Detection Tools for Web Services**
 
@@ -15,7 +15,7 @@ In practice, the column `Review` represents what is considered as the `true vuln
 
 ##  How to use it
 
-1. Setup your database. A script to fill a `PostgreSQL` database can be found in database dump](data). It is a minimal version, just for demo.
+1. Setup your database. A script to fill a `PostgreSQL` database can be found in [database dump](data). It is a minimal version, just for demo.
 2. Configure the class `Database.java` according to the database and configuration used in step 1.
 3. You can (must) replace the class `Logging.java` for your favorite logging framework.
 4. Install the missing `maven` dependencies, located inside [install](install). Use the [install.sh](install/install.sh) to help you.
@@ -68,6 +68,9 @@ that have different effectiveness in different scenarios..
 
 
 ##  Examples of works using the benchmark
+
+* M. Elsayed and M. Zulkernine, *["Offering security diagnosis as a service for cloud SaaS applications,"](https://doi.org/10.1016/j.jisa.2018.11.006)* Journal of Information Security and Applications, vol. 44, pp. 32–48, 2019.
+* J. Thomé, L. K. Shar, D. Bianculli, L. Briand, *[“An Integrated Approach for Effective Injection Vulnerability Analysis of Web Applications through Security Slicing and Hybrid Constraint Solving”](https://doi.org/10.1109/TSE.2018.2844343)*, IEEE Transactions on Software Engineering, 2018.
 * J. Thomé, L. K. Shar, D. Bianculli, L. Briand, *[“Security Slicing for Auditing Common Injection Vulnerabilities”](http://hdl.handle.net/10993/29924)*, Journal of Systems and Software, 2017.
 * J. Thomé, L. K. Shar, D. Bianculli, L. Briand, *["Search-driven String Constraint Solving for Vulnerability Detection"](http://hdl.handle.net/10993/29045)*, In Proceedings of the 39th International Conference on Software Engineering (ICSE 2017). ACM.
 * A. P. Matsunaga, R. Moraes, N. Antunes, *["Coverage Metrics and Detection of Injection Vulnerabilities: An Experimental Study"](https://doi.org/10.1109/EDCC.2016.32)*, 12th European Dependable Computing Conference (EDCC 2016), Gothenburg, Sweden, September 5-9, 2016.
